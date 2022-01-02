@@ -1,0 +1,164 @@
+/* Mark LaFreniere
+    Last Modified: 12/2/2021*/
+
+body {
+    margin:0%;
+    padding:0%;
+    font-family: sans-serif;
+}
+
+#leftBorder {
+    background-color: #7ECC94;
+    height:100%;
+    width:15%;
+    position: fixed;
+}
+#rightBorder {
+    background-color: #E48ED1;
+    height:100%;
+    width:15%;
+    margin-left: 85%;
+    position:fixed;
+}
+#center{
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+    position:absolute;
+}
+
+#profileInfo {
+    
+    background-color: white;
+    width: auto;
+    height:auto;
+    border-bottom: 2px solid black;
+    margin:0%;
+    padding:0%;
+    
+
+}
+
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px;
+    margin-bottom: 0px;
+}
+
+#statsBox{
+    background-color: #D7BB86;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    
+}
+
+#statsBox h2{
+    font-size: 1vw;
+}
+
+#statsBox p{
+    font-size: 1vw;
+}
+
+#profileBox {
+    text-align: center;
+    font-size: 2vw;
+}
+
+
+#profileBox img {
+    border-radius: 1000px;
+}
+
+
+
+#header input{
+    background-color: #D7BB86;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 200%;
+    float:left;
+}
+
+#header input:hover{
+    background-color: #c7a668; 
+}
+
+#bioBox{
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom: 20px;
+    font-size: 12pt;
+}
+
+img{
+    border-radius: 100px;
+    
+}
+
+#editorBox{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#editorBox input{
+    background-color: #D7BB86;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 1vw;
+}
+
+#editorBox input:hover {
+    background-color: #c7a668;
+}
+
+#postArea {
+    margin-top: 5px;
+    margin-bottom:200px;
+}
+
+#post{
+    border-style: solid;
+    border-radius: 25px;
+    border-color: black;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top: 2%;
+    box-shadow: 3px 3px 3px black;
+    word-wrap: break-word;
+}
+
+
+
+#postHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+#postHeader h3{
+    font-size: 1.5vw;
+}
+
+#post p{
+    font-size: 14pt;
+    margin:25px;
+}

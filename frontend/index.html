@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <!--Mark LaFreniere-->
+    <!--Last Modified: 12/2/2021-->
+    <head>
+        <meta charset="utf-8">
+        <title>Kat Stop - Log In</title>
+        <link rel="icon" href="images/favicon.JPG">
+        <link rel="stylesheet" href="styles/styles.css">
+        <script type="text/javascript" src="frontend_scripts/login.js"></script> 
+    </head>
+
+    <body>
+        <!--main containers-->
+        <div id="leftBorder"></div>
+        <div id="rightBorder"></div>
+        <!--Container where content is located-->
+        <div id="center">
+
+            <header>
+                <h1>Kat Stop</h1>
+                <h2>Where stray cats tend to stay</h2>
+            </header>
+    
+            <main>
+                <form>
+                    <input type="text" id="usernameIn" class="initForm" placeholder="Username" maxlength="20" data-username="{{result['usernameIn']}}"><br><br>
+                    <input type="password" id="passwordIn" class="initForm" placeholder="Password" maxlength="20"><br>
+                    <input type="checkbox" id="showpass" onclick="showPassword()">
+                    <!--Small script to show and hide the password-->
+                    <script>
+                        function showPassword(){
+                            let passText = document.querySelector("#passwordIn");
+                            let passShower = document.querySelector("#showpass").checked;
+                            if(passShower === true){
+                                passText.type = "text";
+                            }
+                            else{
+                                passText.type = "password";
+                            }
+                        }
+                    </script> 
+                    <label for="showpass">Show Password</label><br><br>
+
+                    <input type="button" id="loginSubmit" class="submitButton" value="Log-in">
+                </form>
+                
+                <!--Transfer to account creation page-->
+                <section>
+                    <p>Or... <a href="pages/createAccount.html">Create An Account</a></p>
+                </section>
+            </main>
+
+            <footer>
+                <p>&copy; Kat Stop, Mark LaFreniere, 2021</p>
+            </footer>
+
+        </div>
+        
+    </body>
+
+</html>

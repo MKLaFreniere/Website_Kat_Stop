@@ -1,0 +1,127 @@
+/* Mark LaFreniere
+    Last Modified: 12/2/2021*/
+
+body {
+    margin:0%;
+    padding:0%;
+    font-family: sans-serif;
+}
+
+#bar{
+    position:fixed;
+    top:0;
+    margin:0%;
+    padding:0%;
+}
+
+#leftBar {
+    background-color: #E48ED1;;
+    height:200px;
+    width:15%;
+    position: fixed;
+    border-bottom: 3px solid black;
+}
+
+#titleBar {
+    background-color: white;
+    position:fixed;
+    margin-left: 15%;
+    height:200px;
+    width:36%;
+    text-align: center;
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1{
+    font-size: 6vw;
+    font-weight: 300;
+}
+
+#rightBar {
+    background-color: #7ECC94;
+    height:200px;
+    width:50%;
+    margin-left: 50%;
+    position:fixed;
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img{
+    border-radius: 100px;
+    margin-left: 15px;
+    
+}
+
+#rightBar #usernameDisplay{
+    background-color: #7ECC94;
+    margin: 5px;
+    padding:0px;
+    border-style: none;
+    font-size: 200%;
+    
+}
+
+#logout {
+    background-color: #D7BB86;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 200%;
+    float:left;
+}
+
+#logout:hover{
+    background-color: #c7a668; 
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+#postArea{
+    margin-top:270px;
+    margin-bottom:100px;
+}
+
+#post{
+    border-style: solid;
+    border-radius: 25px;
+    border-color: black;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top: 2%;
+    box-shadow: 3px 3px 3px black;
+    word-wrap: break-word;
+}
+
+#postHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid black;
+}
+
+#postHeader .postUser{
+    font-size: 1.5vw;
+    background-color: white;
+    margin: 5px;
+    padding:0px;
+    border-style: none;
+    font-size: 200%;
+}
+
+#post p{
+    font-size: 14pt;
+    margin:25px;
+}

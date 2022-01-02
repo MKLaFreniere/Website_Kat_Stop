@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <!--Mark LaFreniere-->
+    <!--Last Modified: 12/2/2021-->
+    <head> 
+        <meta charset="utf-8">
+        <title>Kat Stop - Create Account</title>
+        <link rel="icon" href="../images/favicon.JPG">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script type="text/javascript" src="../frontend_scripts/createAccount.js"></script> 
+    </head>
+
+    <body>
+        <!--main containers-->
+        <div id="leftBorder"></div>
+        <div id="rightBorder"></div>
+        <!--Container where content is located-->
+        <div id="center">
+
+            <header>
+                <h2 style="margin-top: 15%; font-size: 3vw;">Create an Account</h2>
+            </header>
+    
+            <main>
+                <form>
+                    <input type="text" id="usernameCreate" class="initForm" placeholder="Username" maxlength="20"><br><br>
+                    <input type="password" id="passwordCreate1" class="initForm" placeholder="Password" maxlength="20"><br><br>
+                    <input type="password" id="passwordCreate2" class="initForm" placeholder="Confirm Password" maxlength="20"><br>
+                    <input type="checkbox" id="showpassCreate" onclick="showPassword()">
+                    <!--Small script to show and hide the password-->
+                    <script>
+                        function showPassword(){
+                            let passText1 = document.querySelector("#passwordCreate1");
+                            let passText2 = document.querySelector("#passwordCreate2");
+                            let passShower = document.querySelector("#showpassCreate").checked;
+                            if(passShower === true){
+                                passText1.type = "text";
+                                passText2.type = "text";
+                            }
+                            else{
+                                passText1.type = "password";
+                                passText2.type = "password";
+                            }
+                        }
+                    </script> 
+                    <label for="showpass">Show Password</label><br><br>
+
+                    <input type="button" id="createSubmit" class="submitButton" value="Create Account">
+                </form>
+                <form action="../index.html">
+                    <input type="submit" class="submitButton" value="Cancel">
+                </form>
+            </main>
+
+            <footer>
+                <p>&copy; Kat Stop, Mark LaFreniere, 2021</p>
+            </footer>
+
+        </div>
+        
+    </body>
+
+</html>
